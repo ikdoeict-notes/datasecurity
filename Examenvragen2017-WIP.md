@@ -78,7 +78,7 @@
   
   Common Criteria
 10. **Waarvoor staat ISO en wat is het verschil tussen ISO27001 en ISO27002?**
-  International Standard Organisation. **ISO27001** Bevast standaard richtlijnen om zelf policies te ontwikkelen en kan op elk bedrijf toegepast worden.**ISO27002** bevat praktische richtlijnen over hoe iso27001 kan geï 
+  International Standard Organisation. **ISO27001** bevat standaard richtlijnen om zelf policies te ontwikkelen en kan op elk bedrijf toegepast worden.**ISO27002** bevat praktische richtlijnen over hoe iso27001 kan geï 
   PCI-DSSmplementeerd worden.
   
 11. **Wat is de inhoud van ISO27001?**
