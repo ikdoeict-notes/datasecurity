@@ -15,6 +15,13 @@
 12. Waarvoor staat PCI-DSS en wat houd dit in? 
 13. Aanvallen kunnen op elke laag van het osi model gebeuren. Geef de lagen met bijhorende aanvallen.
 14. Wat is het doel van encryptie? 
+15. Wanneer wordt een coderig veilig beschouwd?
+16. Verklaar side channel attacks.
+17. Wat is een goed algoritme voor encryptie?
+18. Welke codeertechniek gebruik je voor ontvanger en zender eenzelfde sleutel en voor welke een andere?
+19. Wat is het verschil tissen block en stream cypher?
+20. Hoe werkt Electronic Codebook en is dit veilig?
+21. Hoe werkt Cipher block Chaining?
 
 ## Antwoorden
 1. **Geef de 3 componenten van de data service en bespreek.**
@@ -47,9 +54,9 @@
 
    Door **legitime gebruikers** met kwaad opzet of om goede bedoeling die misbruikt worden. bv Een slechte wifi dekking oplossen et een eigen acces point. **Mobiele apparaten** door diefstal of gebruik buiten een gecontroleerde omgeving. **Leveranciers** (PoS Attack: HVAC company) 
    
-   !! Kan iemand dit nog verduidelijken? !!
+   !! Kan iemand leveranciers nog verduidelijken? !!
    
-7. **Wat is de meest gangbare definitie van hacking?***
+7. **Wat is de meest gangbare definitie van hacking?**
    
    Het ongeoorloofd binnendringen in een computersysteem.
    
@@ -63,14 +70,14 @@
    
    **Email policy**: Beschrijft Hoe, wanneer en wat geaudit moet worden door wie.
    
-9. **Welke Internationate security management frameworks bestaan er?**
+9. **Welke Internationale security management frameworks bestaan er?**
 
   ISO27001 & ISO 27002
   
   PCI-DSS
   
   Common Criteria
-10. **Wat is het verschil tussen ISO27001 en ISO27002?**
+10. **Waarvoor staat ISO en wat is het verschil tussen ISO27001 en ISO27002?**
   International Standard Organisation. **ISO27001** Bevast standaard richtlijnen om zelf policies te ontwikkelen en kan op elk bedrijf toegepast worden.**ISO27002** bevat praktische richtlijnen over hoe iso27001 kan geï 
   PCI-DSSmplementeerd worden.
   
@@ -104,10 +111,39 @@
   * L3: Network
   * L2: Data link
     * Network trafic sniffing, Arp spoofing / poisoning
-  L1: Physical
+  * L1: Physical
     * Diefstal, ongeautoriseerde toegang tot computer of lokaal, aangepaster firmwares
 
 14. **Wat is het doel van encryptie?**
   Data coderen naar een onherkenbaar formaat. Gemakkelijk omkeerbaar voor doelpublie maar moeilijk voor onbekenden. Bewaken van intergiteit.
   
-15. 
+15. **Wanneer wordt een coderig veilig beschouwd?**
+   
+   Een codering kan veilig beschouwd worden als de waarde van de beschermde gegevens lager ligt dan de kost van de aanval. 
+
+16. **Verklaar side channel attacks.**
+   
+   Side channel attacks vallen de codering niet rechtstreeks aan. bv iPhone keylogger.
+   
+17. **Wat is een goed algoritme voor encryptie?**
+
+    Een goed algoritme beschermt date op basis van een (geheime) sleutel. Het algoritme is publiekelijk beschikbaar en gebruikt bestaande algoritmes. 
+    
+18. **Welke codeertechniek gebruik je voor ontvanger en zender eenzelfde sleutel en voor welke een andere?**
+   **symmetrische codering** -> Eenzelfde sleutel die geheim is. -> **Secret key**
+   
+   **assymmetrische codering** -> Beide partijen gebruiken verschillende sleutels waarvan éé van beide publiek kan gemaakt worden naargelang jouw toepassing -> **Public Key**
+   
+   Zender aka encryptie, ontvanger aka decryptie
+   
+ 19. **Wat is het verschil tissen block en stream cypher?**
+   
+   Bij ** block cypher** wodt de data verdeeld in blokken van een bepaalde grootte. Wanneer een datastroom versleuteld worden betekend dat dat de stroom onderverdeeld moet worden in een aantal blokken. De stroom zal eventueel vergroot worden door paddingbits om blokken van gelijke groote te bekomen.
+   
+   Bij **stream cypher** wordt de datastroom symbool per symbool versleuteld. Dit gaat sneller maar is beperkt in zijn hoeveelheid gegevens en kan minder complexere operaties uitvoeren.
+   
+20. **Hoe werkt Electronic Codebook en is dit veilig?**
+   ECB is een methode waarbij men data splitst in blokken. Het encryptiealgoritme zal dan een aantal keer herhaald worden op de opeenvolgende blokken met hetzelfde ecnryptiealgoritme en sleutel voor elke blok. Het nadeel is dat deze methode veel informatie prijs geeft. Dit verlaagd de confidentiality en is zeker niet veilig/aangewezen voor gebruik.
+   
+21. **Hoe werkt Cipher block Chaining?**
+   Bij CBC gebruik je de cipher tekst van het vorige blok om het volgende tekst blok te vervormen alvorens je encypteert. De ontvanger beschikt over het nodige ciperblok m na decryptie het resultaat terug te kunnne vormen naar de juiste plain tekst. Echter moet er afgesproken worden welke initail vector (IV) er gebruikt wordt bij het eerste blok.
