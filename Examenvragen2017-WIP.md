@@ -1,5 +1,5 @@
 # Examenvragen - Data Security 2017 (WIP)
-###### Door [Seppe Snoeck](github.com/AllUsernamesHaveBeenTaken) volgens [samenvatting/cursus](github.com/ikdoeict-notes/datasecurity/blob/master/samenvatting-AnthonyMestdach/DataSecurity.docx) Anthony Mestdagh
+###### Door [Seppe Snoeck](https://www.github.com/AllUsernamesHaveBeenTaken) volgens [samenvatting/cursus](https://www.github.com/ikdoeict-notes/datasecurity/blob/master/samenvatting-AnthonyMestdach/DataSecurity.docx) Anthony Mestdagh
 
 1. Geef de 3 componenten van de data service en bespreek.
 2. Welke acties kan je onder nemen voor stategie en beveiliging? 
