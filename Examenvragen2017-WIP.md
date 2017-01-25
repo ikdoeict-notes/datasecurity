@@ -31,6 +31,11 @@
 28. Aan welke eisen moet een user en autenticator voeldoen voor een veilig(e omgang met) paswoord?
 29. Hoe sla je paswoorden het best op in bv. een databank?
 30. Wat is de functie van salt?
+31. Leg de werking uit van biometrische authenticatie. Twee methoden.
+32. Wat is het verschil tussen IDS en IPS?
+33. Geef drie dedectie systemen binnen NIPS.
+34. Wat is een Honneypot?
+35. Verduidelijk virus, worm, rootkit en trojan.
 
 ## Antwoorden
 1. **Geef de 3 componenten van de data service en bespreek.**
@@ -210,3 +215,33 @@
    Wanneer nu een aanvaller een veel voorkomen paswoord wilt testen met de hashes in een databank moet hij ook alles salts van de databank toevoegen aan het paswoord. Wat dan weer vertraging oploopt voor de aanvaller.
 
    Ook voor de gebruiker zal dit vertraging oplopen bij het inloggen maar dit is miniem zeker in vergelijking met een aanval op een databank. 
+
+31. **Leg de werking uit van biometrische authenticatie. Twee methoden.**
+
+   **Verificatie**: De gebruiker geeft informatie over zijn identiteit en wordt die geverifiërd aan de hand van de biometrische gegevens.
+
+   **Identificatie**: Er wordt in alle user templates gezocht naar een match. De gebruiker krijgt de identiteit van de user template waarmee een match is gevonden.
+
+32. **Wat is het verschil tussen IDS en IPS?**
+
+   **Intrusion Detection System** dedecteerd problemen en rapporteert ze. Vaak offline, wordt aan een SPAN-poort gekoppelt om een kopie van het verkeer te inspecteren. --> volledig onzichtbaar voor een aanvaller.
+
+   **Intrusion Prevention System** kan zelf ingrijpen op het netwerkverkeer (vb. connecties sluiten). Het verkeer moet door dit toestel. 
+
+33. **Geef drie dedectie systemen binnen NIPS.**
+   
+   Signature, Anomalie en Protocal anomalie detectie.
+
+34. **Wat is een Honneypot?**
+
+   Een IT-systeem dat is opgezet om aanvallers te lokken die het netwerk aanvallen.
+
+35. **Verduidelijk virus, worm, rootkit en trojan.**
+
+   Een **virus** is malware dat moet uitgevoerd worden. Het infecteerd andere bestanden komt voor als poly-(veranderd bij elke infectie) en metamorf(herschrijft zichzelf).
+
+   Een **worm** verspreid zichzelf door actief te zoeken naar slachtoffers.
+
+   **Rootkit** is een malware die zich in het OS nestelt en is erg moeilijk detecteerbaar.
+
+   Een **trojan** is malware dat zich anders voordoet.
